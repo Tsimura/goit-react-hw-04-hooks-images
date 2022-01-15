@@ -11,8 +11,8 @@ const Button = ({ loadMoreImages, onClick }) => {
     </LoadMoreBtn>
   );
 };
-Button.propTypes = {
-  loadMoreImages: PropTypes.func.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
+// Button.propTypes = {
+//   loadMoreImages: PropTypes.func.isRequired,
+//   onClick: PropTypes.func.isRequired,
+// };
 export default Button;

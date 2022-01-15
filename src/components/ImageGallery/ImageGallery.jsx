@@ -16,15 +16,15 @@ const ImageGallery = ({ images, onImageClick }) => {
     </ImageGalleryWrapper>
   );
 };
-ImageGallery.propTypes = {
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      webformatUR: PropTypes.string,
-      largeImageURL: PropTypes.string,
-      tags: PropTypes.string,
-    }),
-  ),
-  onImageClick: PropTypes.func.isRequired,
-};
+// ImageGallery.propTypes = {
+//   images: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.number.isRequired,
+//       webformatUR: PropTypes.string,
+//       largeImageURL: PropTypes.string,
+//       tags: PropTypes.string,
+//     }),
+//   ),
+//   onImageClick: PropTypes.func.isRequired,
+// };
 export default ImageGallery;
