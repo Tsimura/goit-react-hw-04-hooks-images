@@ -29,8 +29,8 @@ class ModalWindow extends Component {
     );
   }
 }
-// ModalWindow.protoTypes = {
-//   onClose: PropTypes.func.isRequired,
-//   children: PropTypes.string.isRequired,
-// };
+ModalWindow.protoTypes = {
+  onClose: PropTypes.func.isRequired,
+  children: PropTypes.string.isRequired,
+};
 export default ModalWindow;

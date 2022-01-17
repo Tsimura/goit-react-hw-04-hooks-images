@@ -18,10 +18,10 @@ const ImageGalleryItem = ({
     </GalleryItemWrapper>
   );
 };
-// ImageGalleryItem.propTypes = {
-//   webformatURL: PropTypes.string.isRequired,
-//   largeImageURL: PropTypes.string.isRequired,
-//   tags: PropTypes.string.isRequired,
-//   onImageClick: PropTypes.func.isRequired,
-// };
+ImageGalleryItem.propTypes = {
+  webformatURL: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  onImageClick: PropTypes.func.isRequired,
+};
 export default ImageGalleryItem;
