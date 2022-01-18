@@ -63,11 +63,11 @@ export default function App() {
   return (
     <AppWrapper>
       <Searchbar onSubmit={handleFormSubmit} />
-      {images.length > 0 && (
-        <>
-          <ImageGallery images={images} onImageClick={handleGalleryItemClick} />
-          <Button onClick={onLoadMore} />
-        </>
+      {images.length > 0 && !error && (
+        <ImageGallery images={images} onImageClick={handleGalleryItemClick} />
+      )}
+      {!loading && images.length > 0 && !error && (
+        <Button onClick={onLoadMore} />
       )}
       {loading && (
         <MyLoader style={{ marginRight: 'auto', marginLeft: 'auto' }} />
